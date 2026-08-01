@@ -245,7 +245,7 @@ export class FileViewerComponent implements OnInit {
   private sanitizer = inject(DomSanitizer);
   private route = inject(ActivatedRoute);
   private router = inject(Router);
-  private baseUrl = 'https://archivechain.pt';
+  private baseUrl = 'https://localhost:8085';
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
